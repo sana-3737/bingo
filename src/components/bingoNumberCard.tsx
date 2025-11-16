@@ -1,5 +1,5 @@
 "use client";
-import { useBingo } from "@/context/bingoContext";
+import { useBingo } from "../context/bingoContext";
 
 export default function bingoNumberCard({ num }: { num: number }) {
   const { removeNumber } = useBingo();
