@@ -1,5 +1,5 @@
 "use client";
-import { useBingo } from "./context/bingoContext";
+import { useBingo } from ".../context/bingoContext";
 import PrizeTargetForm from "@/components/prizeTargetForm";
 import NumberCard from "@/components/bingoNumberCard";
 import BingoNumberModal from "@/components/bingoNumberModal";

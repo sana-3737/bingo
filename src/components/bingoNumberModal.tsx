@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useBingo } from "../context/bingoContext";
+import { useBingo } from "..../../context/bingoContext";
 
 export default function bingoNumberModal({ onClose }: { onClose: () => void }) {
   const { addNumber } = useBingo();
