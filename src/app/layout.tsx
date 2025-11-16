@@ -1,5 +1,5 @@
 import "./globals.css";
-import { BingoProvider } from "@/context/bingoContext";
+import { BingoProvider } from '../context/bingoContext';
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
