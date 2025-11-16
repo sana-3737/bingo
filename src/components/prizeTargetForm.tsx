@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useBingo } from "..../../context/bingoContext";
+import { useBingo } from "../../context/bingoContext";
 
 export default function PrizeTargetForm() {
   const { setPrizeTarget, setRemainingPrize, setHasPrizeTarget } = useBingo();
