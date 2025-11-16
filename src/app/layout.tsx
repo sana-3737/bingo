@@ -1,4 +1,3 @@
-// app/layout.tsx
 import "./globals.css";
 import { BingoProvider } from "@/context/bingoContext";
 import Header from "@/components/header";
