@@ -16,8 +16,6 @@ export default function bingoNumberCard({ num }: { num: number }) {
   return (
     <div
       className={`aspect-square rounded p-3 text-xl font-bold text-center cursor-pointer flex items-center justify-center ${getColor(num)}`}
-      onClick={() => removeNumber(num)}
-      title="クリックで削除"
     >
     {num}
     </div>
