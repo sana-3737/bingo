@@ -18,7 +18,7 @@ export default function PrizeTargetForm() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-[#8787af]">
       <div className="bg-white rounded p-6 w-80 shadow-md">
-        <h2 className="text-xl font-bold mb-4 text-center">景品人数を入力してください</h2>
+        <h2 className="text-xl font-bold mb-4 text-center">人数を入力してください</h2>
         <input
           type="number"
           min={1}
