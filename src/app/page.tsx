@@ -3,6 +3,7 @@ import { useBingo } from "../context/bingoContext";
 import PrizeTargetForm from "@/components/prizeTargetForm";
 import NumberCard from "@/components/bingoNumberCard";
 import BingoNumberModal from "@/components/bingoNumberModal";
+import BingoButton from "@/components/bingoButton";
 
 export default function BingoPage() {
   const {
@@ -11,7 +12,7 @@ export default function BingoPage() {
     isModalOpen,
     closeModal,
     remainingPrize,
-    openModal, // ← ここを忘れずに追加！
+    openModal,
   } = useBingo();
 
   if (!hasPrizeTarget) {
@@ -29,6 +30,7 @@ export default function BingoPage() {
         >
           数字入力
         </button>
+        <BingoButton /> {/* ← コンポーネント化したボタンを呼び出す */}
       </div>
 
       {/* カード一覧 */}
