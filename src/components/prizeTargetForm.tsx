@@ -16,7 +16,7 @@ export default function PrizeTargetForm() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#8787af]">
+    <div className="flex items-center justify-center min-h-screen bg-[#dcdcf0]  rounded-lg">
       <div className="bg-white rounded p-6 w-80 shadow-md">
         <h2 className="text-xl font-bold mb-4 text-center">人数を入力してください</h2>
         <input
@@ -31,7 +31,7 @@ export default function PrizeTargetForm() {
         />
         <button
           onClick={handleSubmit}
-          className="w-full bg-blue-600 text-white py-2 rounded font-semibold hover:bg-blue-700 transition"
+          className="w-full bg-[#8787af] text-white py-2 rounded font-semibold hover:bg-[#dcdcf0] transition"
         >
           決定
         </button>
