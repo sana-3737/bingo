@@ -24,8 +24,8 @@ export default function BingoButton() {
       </button>
 
       {isBingo && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
-          <div className="bg-[#8787af] text-[8rem] font-extrabold text-white animate-bounce">
+        <div className="fixed inset-0 flex items-center justify-center bg-white/50 z-50">
+          <div className="bg-[#8787af] z-50 text-[8rem] font-extrabold text-white animate-bounce px-8 py-6 rounded-3xl shadow-lg">
             <div>BINGO!</div>
           </div>
         </div>
