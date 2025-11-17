@@ -3,6 +3,19 @@ import { BingoProvider } from '../context/bingoContext';
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
+export const metadata = {
+  title: "BINGO!",
+  description: "イベント用の楽しいビンゴアプリ 🎉",
+  openGraph: {
+    title: "BINGO!",
+    description: "イベント用の楽しいビンゴアプリ 🎉",
+    url: "https://bingo.vercel.app",
+    siteName: "BINGO!",
+    locale: "ja_JP",
+    type: "website",
+  },
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
