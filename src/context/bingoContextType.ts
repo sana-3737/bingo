@@ -18,4 +18,6 @@ export type bingoContextType = {
 
   showBingoEffect: boolean;
   triggerBingo: () => void;
+
+  websocket: WebSocket | null;
 };

@@ -19,6 +19,13 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
+      <head>
+        {/* Google Fonts の読み込み */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="flex flex-col min-h-screen bg-[#dcdcf0] rounded-lg">
         {/* Contextで全体を包む */}
         <BingoProvider>

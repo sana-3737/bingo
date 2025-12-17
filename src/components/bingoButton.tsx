@@ -3,13 +3,29 @@ import { useState } from "react";
 import { useBingo } from "../context/bingoContext";
 
 export default function BingoButton() {
-  const { remainingPrize, setRemainingPrize } = useBingo();
+  const { remainingPrize, setRemainingPrize, websocket } = useBingo();
   const [isBingo, setIsBingo] = useState(false);
 
   const handleClick = () => {
     setIsBingo(true);
     if (remainingPrize > 0) {
       setRemainingPrize(remainingPrize - 1);
+    }
+    if (websocket && websocket.readyState === WebSocket.OPEN) {
+      websocket.send('FFF#');
+      let cnt = 0;
+      let timer = setInterval(() => {
+        if(cnt % 2 == 0){
+          websocket.send('000#');
+        }
+        else{
+          websocket.send('FFF#');
+        }
+        cnt++;
+        if (cnt >= 21) {
+          clearInterval(timer);
+        }
+      }, 150);
     }
     setTimeout(() => setIsBingo(false), 3000); // 3秒後に消える
   };
